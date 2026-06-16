@@ -30,10 +30,34 @@ export default function WhatIsBotLeague() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12">
         <motion.h2
           {...fadeUp}
-          className="font-[family-name:var(--font-barlow)] text-4xl lg:text-5xl uppercase text-white font-black mb-12"
+          className="font-[family-name:var(--font-barlow)] text-4xl lg:text-5xl uppercase text-white font-black mb-6"
         >
           WHAT IS BOTLEAGUE?
         </motion.h2>
+
+        <motion.div {...fadeUp} className="prose dark:prose-invert max-w-4xl text-[var(--text-secondary)] font-[family-name:var(--font-inter)] mb-12">
+          <p className="text-lg leading-relaxed mb-4">
+            BotLeague is the premier platform designed to elevate India's robotics ecosystem. 
+            Whether you are a student, hobbyist, or professional engineer, our arena provides 
+            the ultimate testing ground. By participating in our national tournaments, teams 
+            can build robust mechanical systems, program autonomous routines, and compete in 
+            high-stakes physical matches that push the boundaries of modern engineering.
+          </p>
+          <p className="text-lg leading-relaxed mb-4">
+            Our mission is to bridge the gap between academic theory and practical application. 
+            Through hands-on experience in the BotLeague arena, participants gain invaluable skills 
+            in rapid prototyping, system integration, teamwork, and strategic problem-solving. 
+            We provide a standardized framework for competitions that ensures fairness while 
+            encouraging radical innovation in robot design.
+          </p>
+          <p className="text-lg leading-relaxed">
+            From the initial spark of an idea to the final buzzer of a championship match, 
+            BotLeague supports you at every step. Join thousands of makers across the country 
+            in a vibrant community where knowledge is shared, rivalries are forged, and the 
+            future of automation is built today. Ready your motors, charge your batteries, 
+            and step into the ultimate robotics arena.
+          </p>
+        </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-16 items-center">
           {/* Left Grid */}

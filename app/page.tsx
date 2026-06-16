@@ -12,7 +12,7 @@ import Footer from "@/components/layout/Footer";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-[var(--bg-primary)] flex flex-col">
+    <main id="main-content" className="min-h-screen bg-[var(--bg-primary)] flex flex-col">
       <Navbar />
       <Hero />
       <CompetitionsEvents />
@@ -24,6 +24,25 @@ export default function Home() {
       <JoinEcosystem />
       <Sponsors />
       <Footer />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is BotLeague?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "BotLeague is India's Ultimate Robotics Arena where you can build, compete, and rank in national robotics tournaments."
+                }
+              }
+            ]
+          })
+        }}
+      />
     </main>
   );
 }

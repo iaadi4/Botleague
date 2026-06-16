@@ -96,7 +96,7 @@ export default function LeagueAdvantage() {
                       <div className="w-full flex items-center gap-4 py-2 border-b border-[#222] mb-2">
                         <div className="relative">
                           <div className="w-12 h-12 rounded-full bg-[#222] border-2 border-[var(--accent-yellow)] overflow-hidden">
-                            <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${row.name}&backgroundColor=b6e3f4`} alt={row.name} className="w-full h-full object-cover" />
+                            <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${row.name}&backgroundColor=b6e3f4`} alt={row.name} width={48} height={48} className="w-full h-full object-cover" />
                           </div>
                           <div className="absolute -bottom-2 -right-2 w-6 h-6 rounded-full bg-gradient-to-tr from-[var(--accent-yellow)] to-[var(--accent-red)] flex items-center justify-center text-black font-black text-[10px]">
                             #{row.rank}
@@ -120,7 +120,7 @@ export default function LeagueAdvantage() {
                           "w-8 h-8 rounded-full flex items-center justify-center shrink-0 overflow-hidden",
                           i === 4 || i === 5 ? "bg-pink-600/20 text-pink-500 border border-pink-500/50" : "bg-[#222] text-gray-400 border border-white/10"
                         )}>
-                          <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${row.name + i}&backgroundColor=transparent`} alt={row.name} className="w-full h-full object-cover" />
+                          <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${row.name + i}&backgroundColor=transparent`} alt={row.name} width={32} height={32} className="w-full h-full object-cover" />
                         </div>
                         <p className="text-white text-sm font-medium flex-1">
                           {row.name}

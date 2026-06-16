@@ -28,7 +28,7 @@ export default function Sponsors() {
               className="flex items-center gap-4"
             >
               <div className="w-14 h-14 rounded-full bg-[#222] flex items-center justify-center grayscale opacity-80 hover:grayscale-0 hover:opacity-100 transition-all cursor-pointer border border-[#333] overflow-hidden">
-                <img src={sponsor.logo} alt={sponsor.name} className="w-10 h-10 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
+                <img src={sponsor.logo} alt={sponsor.name} width={40} height={40} className="w-10 h-10 object-contain" onError={(e) => { e.currentTarget.style.display = 'none'; }} />
               </div>
               <span className="text-white font-[family-name:var(--font-inter)] uppercase font-semibold text-sm">
                 {sponsor.name}

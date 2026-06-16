@@ -33,6 +33,7 @@ export default function Hero() {
           alt="BotLeague Arena" 
           fill 
           priority
+          fetchPriority="high"
           className="object-cover" 
         />
         <div className="absolute inset-0 bg-gradient-to-tr from-black via-black/80 to-transparent z-10" />
