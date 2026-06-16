@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-primary: var(--bg-primary);
+  --color-bg-card: var(--bg-card);
+  --color-bg-card-hover: var(--bg-card-hover);
+  --color-accent-red: var(--accent-red);
+  --color-accent-red-dark: var(--accent-red-dark);
+  --color-accent-yellow: var(--accent-yellow);
+  --color-accent-blue: var(--accent-blue);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-border-subtle: var(--border-subtle);
+  --color-live-red: var(--live-red);
+  
+  --font-barlow: var(--font-barlow);
+  --font-inter: var(--font-inter);
+  --font-orbitron: var(--font-orbitron);
+}
+
+:root {
+  --bg-primary: #0a0a0a;
+  --bg-card: #1a1a1a;
+  --bg-card-hover: #222222;
+  --accent-red: #e63946;
+  --accent-red-dark: #c1121f;
+  --accent-yellow: #f4a500;
+  --accent-blue: #2563eb;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --border-subtle: #2a2a2a;
+  --live-red: #ff0000;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--font-inter), sans-serif;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-barlow), sans-serif;
+}
