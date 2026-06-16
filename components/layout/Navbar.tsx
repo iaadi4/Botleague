@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { NAV_LINKS } from "@/lib/constants";
@@ -6,6 +8,8 @@ import { Zap, Settings } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 export default function Navbar() {
+  const [activeLink, setActiveLink] = useState("Events");
+
   return (
     <nav className="sticky top-0 z-50 w-full backdrop-blur-md bg-black/80 border-b border-[#1a1a1a]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
@@ -26,9 +30,10 @@ export default function Navbar() {
             <Link
               key={link.name}
               href={link.href}
+              onClick={() => setActiveLink(link.name)}
               className={cn(
-                "font-[family-name:var(--font-inter)] uppercase text-sm tracking-widest font-medium text-white transition-colors hover:text-[var(--text-secondary)]",
-                link.name === "Events" && "border-b-2 border-[var(--accent-red)] pb-1"
+                "font-[family-name:var(--font-inter)] uppercase text-sm tracking-widest font-medium text-white transition-all hover:text-[var(--text-secondary)]",
+                link.name === activeLink ? "border-b-2 border-[var(--accent-red)] pb-1" : "border-b-2 border-transparent pb-1"
               )}
             >
               {link.name}
