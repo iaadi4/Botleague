@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# BotLeague - India's Ultimate Robotics Arena 🤖
 
-## Getting Started
+A high performance, pixel perfect landing page built for the BotLeague robotics competition platform. Designed with a dark, cinematic esports aesthetic, this application features smooth scroll animations, dynamic leaderboards, and an interactive event showcase.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js 15](https://nextjs.org/) (App Router)
+- **Library**: [React 19](https://react.dev/)
+- **Language**: [TypeScript](https://www.typescriptlang.org/)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/) (CSS-first configuration, no `tailwind.config.js`)
+- **Animation**: [Framer Motion](https://www.framer.com/motion/)
+- **Components**: [shadcn/ui](https://ui.shadcn.com/) (Radix UI Primitives)
+- **Icons**: [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
+
+## ✨ Key Features
+
+- **Cinematic UI/UX**: Dark mode by default with aggressive neon red and blue accents, styled after modern esports and gaming platforms.
+- **Scroll Animations**: Staggered text reveals, fade-ups, and interactive hover states powered by Framer Motion's `whileInView`.
+- **Dynamic Leaderboards**: Real-time ranking mockup featuring dynamic player avatars generated via the Dicebear API.
+- **Sponsor Integration**: Live fetched high-quality logos of top Indian universities and robotics companies.
+- **Asymmetric Grids**: Custom CSS Grid implementations for showcasing various competition disciplines (Robo Wars, Drone Racing, Line Follower, etc.).
+
+## 🛠️ Getting Started
+
+First, make sure you have Node.js installed. Then, clone the repository and install the dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📦 Building for Production
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To create an optimized production build:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+To start the production server:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run start
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📁 Project Structure
 
-## Deploy on Vercel
+- `/app` - Next.js App Router pages and global CSS configurations.
+- `/components/sections` - Modular page sections (Hero, Leaderboard, Sponsors, Events).
+- `/components/ui` - Reusable shadcn/ui components (Buttons, Cards).
+- `/components/layout` - Global layout components (Navbar, Footer).
+- `/lib` - Utility functions (`cn` for tailwind-merge) and centralized application data/constants (`constants.ts`).
+- `/public/images` - Static image assets, high-res backgrounds, and AI-generated placeholders.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*Built for BotLeague - Build. Compete. Rank.*
